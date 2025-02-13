@@ -1,0 +1,20 @@
+.color-nav {
+  background: linear-gradient(90deg, $primary-color 6%, $secondary-color 92%);
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border-radius: $border-radius;
+}
+
+.nav-item {
+  font-size: 1.4rem; 
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  background-color: rgba(13, 13, 248, 0.836);
+  border-radius: $border-radius-lg;
+  padding: 10px;
+}

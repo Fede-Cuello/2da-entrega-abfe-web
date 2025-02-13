@@ -1,0 +1,61 @@
+/* Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+  line-height: 1.6;
+  color: #333;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Tamaños de fuente
+$font-sizes: (
+  h1: $font-size-h1,
+  h2: $font-size-h2,
+  h3: $font-size-h3,
+);
+
+// Pesos de fuente 
+$font-weights: (
+  h1: $font-weight-bold, 
+  h2: $font-weight-normal,   
+  h3: $font-weight-light,   
+  
+);
+
+
+h1, h2, h3 {
+  font-family: $font-family;
+  margin-bottom: 1rem;
+}
+
+@each $encabezado, $size in $font-sizes {
+  #{$encabezado} {
+    font-size: $size;
+    font-weight: map-get($font-weights, $encabezado);
+    text-align: center;
+  }
+}
+
+
+
+main {
+  background-color: #b7c7f0; 
+  border-radius: $border-radius-lg;
+  min-height: calc(100vh - 100px); /* Solucion para que el footer quede siempre abajo  */
+  margin-bottom: 1rem;
+}
+
+
+.direccion {
+  text-decoration: underline;
+  font-weight: bold;
+}

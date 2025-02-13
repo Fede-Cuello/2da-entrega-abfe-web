@@ -1,0 +1,21 @@
+
+// Estilos y media queries
+.card {
+    @include card-style; 
+
+    
+    @include media(tablet) {
+        .btn-primary {
+            padding: 12px 24px; 
+            font-size: 1.1rem;   
+            border-radius: 5px;  
+          }
+    }
+
+    @include media(mobile) {
+        display: flex;
+        justify-content: center;  
+        align-items: center;  
+    }
+}
+

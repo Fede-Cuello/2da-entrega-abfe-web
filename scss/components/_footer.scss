@@ -1,0 +1,10 @@
+footer {
+    background: linear-gradient(90deg, $primary-color 6%, $secondary-color 92%);
+    color: $white;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem; 
+}

@@ -1,0 +1,11 @@
+{
+  "name": "abfe-sass",
+  "version": "1.0.0",
+  "description": "Proyecto Sass",
+  "scripts": {
+    "sass": "sass --watch scss/styles.scss css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

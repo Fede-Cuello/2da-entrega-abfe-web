@@ -1,0 +1,14 @@
+/* Estilo para el formulario */
+form {
+    border: 2px solid #0f0c0c21;
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    
+    
+    .form-control {
+      border: 1px solid $primary-color;
+      padding: 10px;
+      border-radius: 4px;
+    }
+}
