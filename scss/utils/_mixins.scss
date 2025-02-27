@@ -1,4 +1,4 @@
-// media queries
+// Mixin para media queries
 @mixin media($breakpoint) {
   @if $breakpoint == tablet {
     @media (max-width: 992px) { @content; }
@@ -6,10 +6,9 @@
   @else if $breakpoint == mobile {
     @media (max-width: 576px) { @content; }
   }
- 
 }
 
-//cards
+// Mixin para estilos de las tarjetas
 @mixin card-style($bg-color: #fff, $border-color: #444b58) {
   width: 100%;
   max-width: 400px;
@@ -18,11 +17,12 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 }
+
 
 

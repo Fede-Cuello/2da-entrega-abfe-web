@@ -1,28 +1,32 @@
-
+// Estilos para las tarjetas
 .card {
-    @include card-style;
+  @include card-style;
 
-    
-    @include media(tablet) {
-        .btn-primary {
-            padding: 12px 24px; 
-            font-size: 1.1rem;   
-            border-radius: 5px;  
-        }
+  // tablets 
+  @include media(tablet) {
+    .btn-primary {
+      padding: 8px 16px;
+      font-size: 1rem;
+      border-radius: 5px;
     }
-}
+  }
 
+  // móviles
+  @include media(mobile) {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
 
-@include media(mobile) {
-    .card {
-        display: flex;
-        justify-content: center;  
-        align-items: center;  
-        padding: 4px; 
-
-        .card-body {
-            padding: 4px; 
-        }
-        
+    .card-body {
+      padding: 4px;
     }
+
+    .card-img-top {
+      width: 100%;         
+      height: auto;        
+      object-fit: cover; 
+    }
+  }
 }
