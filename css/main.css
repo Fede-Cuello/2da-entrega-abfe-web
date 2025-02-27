@@ -45,6 +45,14 @@ main {
   margin-bottom: 1rem;
 }
 
+.img-fondo {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .direccion {
   text-decoration: underline;
   font-weight: bold;
@@ -65,16 +73,22 @@ main {
   text-transform: uppercase;
 }
 
+.nav-link {
+  color: #000;
+}
+
 .nav-link:hover {
   background-color: rgba(13, 13, 248, 0.836);
   border-radius: 10px;
   padding: 10px;
+  color: #fff;
 }
 
 .card {
-  width: 18rem;
+  width: 100%;
+  max-width: 400px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #444b58;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -90,14 +104,18 @@ main {
     border-radius: 5px;
   }
 }
+
 @media (max-width: 576px) {
   .card {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4px;
+  }
+  .card .card-body {
+    padding: 4px;
   }
 }
-
 .carousel-height {
   height: 600px;
 }
@@ -122,12 +140,48 @@ main {
 footer {
   background: linear-gradient(90deg, #004eff 6%, rgba(148, 172, 231, 0.984) 92%);
   color: #fff;
-  height: 40px;
-  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 8px 15px;
   font-size: 0.875rem;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+footer .social-icons a {
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #004eff;
+}
+footer .social-icons a i {
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.75rem;
+  }
+  footer .footer-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .social-icons {
+    gap: 10px;
+  }
+  footer .social-icons a {
+    font-size: 16px;
+  }
 }
 
 /* animacion para inclinar logo */

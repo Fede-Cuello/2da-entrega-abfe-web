@@ -54,6 +54,13 @@ main {
   margin-bottom: 1rem;
 }
 
+.img-fondo{
+  border-radius: $border-radius;
+  width: 100%;          
+  height: 100%;         
+  object-fit: cover;    
+  object-position: center; 
+}
 
 .direccion {
   text-decoration: underline;

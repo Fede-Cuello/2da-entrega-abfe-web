@@ -1,7 +1,6 @@
 
-// Estilos y media queries
 .card {
-    @include card-style; 
+    @include card-style;
 
     
     @include media(tablet) {
@@ -9,13 +8,21 @@
             padding: 12px 24px; 
             font-size: 1.1rem;   
             border-radius: 5px;  
-          }
-    }
-
-    @include media(mobile) {
-        display: flex;
-        justify-content: center;  
-        align-items: center;  
+        }
     }
 }
 
+
+@include media(mobile) {
+    .card {
+        display: flex;
+        justify-content: center;  
+        align-items: center;  
+        padding: 4px; 
+
+        .card-body {
+            padding: 4px; 
+        }
+        
+    }
+}

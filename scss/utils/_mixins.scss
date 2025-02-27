@@ -9,9 +9,10 @@
  
 }
 
-// cards
-@mixin card-style($width: 18rem, $bg-color: #fff, $border-color: #ddd) {
-  width: $width;
+//cards
+@mixin card-style($bg-color: #fff, $border-color: #444b58) {
+  width: 100%;
+  max-width: 400px;
   background-color: $bg-color;
   border: 1px solid $border-color;
   border-radius: 0.5rem;
@@ -23,3 +24,5 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 }
+
+

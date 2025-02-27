@@ -13,8 +13,13 @@
   text-transform: uppercase;
 }
 
+.nav-link {
+  color: #000;
+}
+
 .nav-link:hover {
   background-color: rgba(13, 13, 248, 0.836);
   border-radius: $border-radius-lg;
   padding: 10px;
+  color: $white ;
 }
